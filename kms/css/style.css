@@ -1,0 +1,287 @@
+:root {
+    --yellow: #ffc600;
+    --black: #302f2f;
+  }
+  
+  html {
+    
+    box-sizing: border-box;
+    
+    
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--black);
+
+  }
+  
+  
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background-image: url("./images/topography.svg"),
+      linear-gradient(110deg, red ,black);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+
+    background-attachment: fixed;
+    letter-spacing: -1px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 5px 0;
+  }
+  
+  .item {
+ 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    font-size: 35px;
+    background-color: var(--yellow); 
+  }
+  
+  .item p {
+    margin: 0 0 5px 0;
+  }
+
+body {
+    font-size: 15px;
+  }
+  
+  button {
+    background: #ffc600;
+    border: 0;
+    padding: 10px 20px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+ 
+  .wrapper {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  .top {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "hero hero cta1"
+      "hero hero cta2"
+  }
+  
+  .hero {
+    grid-area: hero;
+    min-height: 400px;
+    background: white url(images/40k.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .hero > * {
+    background: var(--yellow);
+    padding: 5px;
+  }
+  
+  .cta {
+    background: var(--yellow);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  
+  .cta p {
+    margin: 0;
+  }
+  
+  .cta1 {
+    grid-area: cta1;
+  }
+  
+  .cta2 {
+    grid-area: cta2;
+  }
+  
+  .price {
+    font-size: 60px;
+    font-weight: 300;
+  }
+  
+
+  
+  .menu ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  
+  .menu a {
+    background: var(--yellow);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  [aria-controls="menu-list"] {
+    display: none;
+  }
+  
+  
+  
+  .features {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .feature {
+    background: url(images/fist.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px  rgb(0, 0, 0);
+   
+    
+  }
+  .feature2 {
+    background: url(images/astra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px  rgb(0, 0, 0);
+   
+    
+  }.feature3 {
+    background: url(images/ass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px  rgb(0, 0, 0);
+   
+  }.feature4 {
+    background: url(images/soro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px  rgb(0, 0, 0);
+   
+  }
+  
+  .feature .icon {
+    font-size: 50px;
+  }
+  .feature p {
+    color: rgb(49, 49, 49);
+  }
+  
+  
+  
+  .about {
+    background: url(images/emps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+  }
+  
+  
+    .copyright {
+        font-size: 1.4rem;
+        color: #aaa;
+        margin-top: 6rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 70%; }  
+  @media (max-width: 1000px) {
+    .menu {
+      perspective: 800px;
+    }
+    [aria-controls="menu-list"] {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .menu ul {
+      max-height: 0;
+      overflow: hidden;
+      transform: rotateX(90deg);
+      transition: all 0.5s;
+    }
+  
+    [aria-expanded="true"] ~ ul {
+      display: grid;
+      max-height: 500px;
+      transform: rotateX(0);
+    }
+  
+    [aria-expanded="false"] .close {
+      display: none;
+    }
+  
+    [aria-expanded="true"] .close {
+      display: inline-block;
+    }
+  
+    [aria-expanded="true"] .open {
+      display: none;
+    }
+  
+  }
+  
+  @media (max-width: 700px) {
+    .top {
+      grid-template-areas:
+        "hero hero"
+        "cta1 cta2"
+    }
+    
+    .about {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .top {
+      grid-template-areas:
+        "hero"
+        "cta1"
+        "cta2"
+    }
+  }
+  
