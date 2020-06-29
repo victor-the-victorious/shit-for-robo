@@ -1,0 +1,38 @@
+.trash-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--main-gold);
+  }
+  
+  .trash-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-black);
+  }
+  
+  @media (max-width: 28.75em) {
+    .trash-section-header {
+      font-size: 4rem;
+    }
+  }
+  
+  .trash-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  @media (max-width: 30.625em) {
+    .trash-section {
+      padding: 6rem 1rem;
+    }
+  
+    .trash-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,46 @@
+.whydoilive-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: url(/img/41k.jpg);
+  }
+  
+  .whydoilive-section-header > h2 {
+    font-size: 6rem;
+    background-color: var(--main-gray);
+  }
+  
+  @media (max-width: 28.75em) {
+    .whydoilive-section-header > h2 {
+      font-size: 4rem;
+    }
+  }
+  
+  .whydoilive-section-header > p {
+    font-style: italic;
+    background-color: var(--main-gray);
+  }
+  
+  .whydoilive-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .whydoilive-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .whydoilive-details:hover {
+    transform: translateY(8px);
+  }
