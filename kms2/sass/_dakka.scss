@@ -1,0 +1,33 @@
+.stuff {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "dakka dakka uwu1"
+      "dakka dakka uwu2"
+  }
+  
+  .dakka {
+    grid-area: dakka;
+    min-height: 400px;
+    background:  url(/images/40k.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .dakka > * {
+    background: var(--gold);
+    padding: 5px;
+  }
+  
+  .uwu {
+    background: var(--gold);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }

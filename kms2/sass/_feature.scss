@@ -1,0 +1,53 @@
+.features {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .feature {
+    background: url(/images/fist.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+    
+  }
+  .feature2 {
+    background: url(/images/soro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+    
+  }.feature3 {
+    background: url(/images/ass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+  }.feature4 {
+    background: url(/images/astra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+  }
+  
+  .feature .icon {
+    font-size: 50px;
+  }
+  .feature p {
+    color: rgb(49, 49, 49);
+  }

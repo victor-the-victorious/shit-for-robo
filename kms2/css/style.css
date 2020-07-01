@@ -1,0 +1,215 @@
+:root {
+    --gold: #ff9900;
+    --black: #302f2f;
+    --red: red;
+    --megablack: black;
+    --silver: silver;
+  }
+  
+  html {
+    
+    box-sizing: border-box;
+    font-size: 10px;
+    color: var(--black);
+
+  }
+    body {
+    background-image:
+      linear-gradient(110deg, var(--red) ,var(--megablack));
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px;
+    background-attachment: fixed;
+  }
+  
+  h1{
+    margin: 0 0 5px 0;
+  }
+  h2{
+    margin: 0 0 5px 0;
+  }
+  h3{
+    margin: 0 0 5px 0;
+  }
+  h4{
+    margin: 0 0 5px 0;
+  }
+  h5{
+    margin: 0 0 5px 0;
+  }
+  h6 {
+    margin: 0 0 5px 0;
+  }
+  
+  .item {
+ 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: var(--gold); 
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+  button {
+    background: var(--gold);
+    border: 0;
+    padding: 10px 20px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+.header {
+    display: grid;
+    grid-gap: 20px;
+  }
+  
+  .stuff {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+      "dakka dakka uwu1"
+      "dakka dakka uwu2"
+  }
+  
+  .dakka {
+    grid-area: dakka;
+    min-height: 400px;
+    background:  url(/images/40k.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .dakka > * {
+    background: var(--gold);
+    padding: 5px;
+  }
+  
+  .uwu {
+    background: var(--gold);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+  }
+  
+  .uwu p {
+    margin: 0;
+  }
+  
+  .uwu1 {
+    grid-area: uwu1;
+  }
+  
+  .uwu2 {
+    grid-area: uwu2;
+  }
+  
+  .price {
+    font-size: 60px;
+    font-weight: 300;
+  }
+  .menu ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  
+  .menu a {
+    background: var(--gold);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+.features {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .feature {
+    background: url(/images/fist.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+    
+  }
+  .feature2 {
+    background: url(/images/soro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+    
+  }.feature3 {
+    background: url(/images/ass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+  }.feature4 {
+    background: url(/images/astra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    border: 1px solid var(--silver);
+    text-align: center;
+    ;
+   
+  }
+  
+  .feature .icon {
+    font-size: 50px;
+  }
+  .feature p {
+    color: rgb(49, 49, 49);
+  }
+  
+  
+  
+  .about {
+    background: url(/images/emps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+  }
+  
+  
+    .copyright {
+        font-size: 2rem;
+        color:var(--silver);
+        margin-top: 6rem;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        width: 70%; }  
